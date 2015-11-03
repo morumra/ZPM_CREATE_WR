@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.ui.commons,sap.suite.ui.commons"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+					"org.metro.pm.request.create":"./",
+					"zpm_create_wr":"./zpm_create_wr"
+				}'
+				>
+		</script>
+		<script>
+				var component = new sap.ui.core.ComponentContainer({
+					name : 'org.metro.pm.request.create', 
+				});
+				component.placeAt('createRequest');
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="createRequest"></div>
+	</body>
+</html>
